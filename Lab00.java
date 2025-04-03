@@ -31,17 +31,16 @@ public class Lab00
 
       System.out.println();
 
-
    }
 
    // char_count function
    public static int char_count(String s, char c)
    {
       int count = 0;
-
-      for (int i = 0; i < s.length(); i = i + 1) {
-         if (s.charAt(i) == c) {
-            count = count + 1;
+      // for loop which goes from 0 to the length of the string
+      for (int i = 0; i < s.length(); i++) {
+         if (s.charAt(i) == c) { // if the character at the index == the character
+            count++;
          }
       }
       return count;
